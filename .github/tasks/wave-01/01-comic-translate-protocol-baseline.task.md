@@ -2,7 +2,7 @@
 
 ## Status
 
-PLANNED
+COMPLETED
 
 ## Objective
 
@@ -166,4 +166,24 @@ Known limitations:
 Files changed / scope verification:
 Next task(s) and handoff constraints:
 Coordinator acceptance:
+```
+
+## Execution Record
+
+```text
+Task: Wave 01 — Task 01 — Comic Translate Protocol Baseline
+Status: COMPLETED
+Artifact path and revision/hash: docs/architecture/comic-translate-protocol-contract.md; SHA-256 7f38d5fd91962d50209bc56e68e29c1c6ea44427003c84cada78e3bfd08b7523
+Sources and versions inspected: ogkalu2/comic-translate @ 8977b91a4f7a40c3917c5a268e9e7d78e1d818da; main; v2.8.9; requests>=2.31.0
+Prerequisites accepted: none; Task 01 has no dependencies
+Decisions frozen in this task: Custom base-URL composition; direct POST Chat Completions request; observed fields/messages/image shape; complete response consumption; block_N JSON semantics; manual model selection; no consumer model discovery; public Bearer behavior; generic consumer errors
+Decisions intentionally deferred (owner / reason / trigger): canonical models (Task 02 / outside consumer contract / Task 02 start); compatibility response and malformed-output policy (Task 03 and Task 06 / implementation architecture / dependent task start); provider mappings and auth internals (later provider/security tasks / private boundary / applicable task start)
+Acceptance criteria and evidence: compatibility matrix CT-REQ-001 through CT-REQ-022 and evidence index CT-001 through CT-010 in the artifact; zero-modification result YES
+Validation commands / document walkthroughs / results: pinned-source configuration, text request, image request, response parser, manual model, and failure paths independently followed; mandatory-section check passed; final repository checks recorded at approval gate
+Reviewer decision: Architecture & Security APPROVE
+Findings (Blocking / Important / Optional) and disposition: none / parser and malformed-JSON corrections resolved and independently verified / none
+Known limitations: source-derived rather than live runtime evidence; no dedicated upstream protocol tests found; exact installed Requests version is not pinned
+Files changed / scope verification: Task 01 task record, Wave 01 Task 01 status row, and the single Task 01 architecture artifact only; no implementation or tests
+Next task(s) and handoff constraints: Task 02 remains PLANNED and must not start without explicit user instruction
+Coordinator acceptance: approved by the user on 2026-10-12; Task 01 completed for commit
 ```
