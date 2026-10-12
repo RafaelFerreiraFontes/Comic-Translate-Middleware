@@ -2,7 +2,7 @@
 
 ## Status
 
-PLANNED
+COMPLETED
 
 ## Objective
 
@@ -163,4 +163,24 @@ Known limitations:
 Files changed / scope verification:
 Next task(s) and handoff constraints:
 Coordinator acceptance:
+```
+
+## Execution Record
+
+```text
+Task: Wave 01 — Task 02 — Canonical Domain Contracts
+Status: COMPLETED
+Artifact path and revision/hash: docs/architecture/canonical-domain-contracts.md; SHA-256 ac71a6ae853dec879f47fe6b403bb04ecf7648eb959b7b8e4c1cda56826edf4b
+Sources and versions inspected: accepted Task 01 artifact SHA-256 7f38d5fd91962d50209bc56e68e29c1c6ea44427003c84cada78e3bfd08b7523; middleware repository baseline ae7da83840aec0dbaa332ea2614fcf03f1c8fa78; project OpenAI and Google references at that baseline; official upstream URLs recorded in the artifact; upstream OpenAI SDK/API, google-antigravity, and agy versions unpinned and no live probes performed
+Prerequisites accepted: Task 01 COMPLETED; accepted protocol artifact hash verified before Task 02 execution
+Decisions frozen in this task: CDD-001 through CDD-012; triple model identity; ordered role/content semantics; closed text/image union; decoded image bytes plus media type; provider-neutral generation and output-hint semantics; terminal-success result; truthful usage and finish normalization; minimal capability/model structure; provider-object and credential isolation
+Decisions intentionally deferred (owner / reason / trigger): CDD-D01 through CDD-D08 assign compatibility to Task 03, routing/transport selection to Task 04, catalog/capability evidence to Task 05, lifecycle/errors to Task 06, auth to Task 07, concrete models to an authorized implementation wave, and remote images/additional content kinds to future approved requirements
+Acceptance criteria and evidence: CT-REQ-001 through CT-REQ-022 mapped; CDI-001 through CDI-018 recorded; CDV-001 through CDV-027 inventory; OpenAI Responses, Google Antigravity SDK, and Google agy CLI paper mappings plus source/version evidence; valid/invalid examples; unsupported or unknown capabilities fail explicitly without changing core types
+Validation commands / document walkthroughs / results: mandatory-section and scope script passed; 22 CT mappings, 18 invariants, 12 frozen decisions, 8 deferrals, and 27 future-validation IDs verified; provider evidence matrix verified; Markdown no-index whitespace check produced no diagnostics; independent reviewers inspected required project/provider references and final worktree scope
+Reviewer decision: final independent Architecture & Security APPROVE; no blocking, important, or optional findings
+Findings (Blocking / Important / Optional) and disposition: none / provider source-version evidence was required and resolved, then independently approved / testability inventory expansion was required by optional Implementation & Testing review and resolved
+Known limitations: documentation-only paper validation; upstream provider versions are unpinned; no live provider/package/binary probes; exact model MIME/size capability, Google SDK/CLI transport selection, catalog evidence, lifecycle/error policy, and auth implementation remain with their owning later tasks
+Files changed / scope verification: Task 02 task record, Wave 01 Task 02 status row, and the single Task 02 architecture artifact only; no production code, endpoints, providers, OAuth, tests, fixtures, dependencies, packaging, or future-task artifacts
+Next task(s) and handoff constraints: Task 03 remains PLANNED and must not start before explicit Task 02 approval; Tasks 03–06 must preserve CDD/CDI semantics and return structural conflicts through Coordinator impact review
+Coordinator acceptance: approved by the user on 2026-10-12; Task 02 completed for commit; nothing pushed
 ```

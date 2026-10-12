@@ -46,7 +46,7 @@ No existing repository evidence places implementation in this Wave.
 | ID | Task | Depends On | Primary Agent | Reviewer | Status |
 | --- | --- | --- | --- | --- | --- |
 | 01 | [Comic Translate Protocol Baseline](01-comic-translate-protocol-baseline.task.md) | None | Architecture & Security | Coordinator | COMPLETED |
-| 02 | [Canonical Domain Contracts](02-canonical-domain-contracts.task.md) | 01 | Architecture & Security | Coordinator | PLANNED |
+| 02 | [Canonical Domain Contracts](02-canonical-domain-contracts.task.md) | 01 | Architecture & Security | Coordinator | COMPLETED |
 | 03 | [Compatibility Layer Contract](03-compatibility-layer-contract.task.md) | 01, 02 | Architecture & Security | Implementation & Testing | PLANNED |
 | 04 | [Provider Interface and Routing](04-provider-interface-and-routing.task.md) | 02, 03 | Architecture & Security | Coordinator | PLANNED |
 | 05 | [Model Catalog and Capabilities](05-model-catalog-and-capabilities.task.md) | 04 | Architecture & Security | Google / Antigravity | PLANNED |
