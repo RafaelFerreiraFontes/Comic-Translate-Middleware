@@ -2,7 +2,7 @@
 
 ## Status
 
-PLANNED
+COMPLETED
 
 ## Objective
 
@@ -167,4 +167,24 @@ Known limitations:
 Files changed / scope verification:
 Next task(s) and handoff constraints:
 Coordinator acceptance:
+```
+
+## Execution Record
+
+```text
+Task: Wave 01 — Task 03 — Compatibility Layer Contract
+Status: COMPLETED
+Artifact path and revision/hash: docs/architecture/compatibility-contract.md; SHA-256 30e6d0e6788a4b5fda69225770f332a4119aea6dc3b6d35ac3373e2b981219fb
+Sources and versions inspected: accepted Task 01 artifact SHA-256 7f38d5fd91962d50209bc56e68e29c1c6ea44427003c84cada78e3bfd08b7523; accepted Task 02 artifact SHA-256 ac71a6ae853dec879f47fe6b403bb04ecf7648eb959b7b8e4c1cda56826edf4b; middleware baseline 262a7872752d4bc5faa18830c36c83f73cb3d37c; project OpenAI/FastAPI references at that baseline; upstream SDK/API versions unpinned and no live probes performed
+Prerequisites accepted: Task 01 COMPLETED and Task 02 COMPLETED; both accepted artifact hashes verified before Task 03 execution
+Decisions frozen in this task: CCD-001 through CCD-016; pure deterministic normalization/building with injected contexts; strict namespaced model syntax; ordered direct role/content mapping; strict data-URI image decoding; closed public fields; generation-option preservation; trusted operation-profile output hint; deterministic complete response; truthful finish/usage mapping; public-complete/private-stream split; provider-adapter policy ownership
+Decisions intentionally deferred (owner / reason / trigger): CCD-D01 through CCD-D08 assign routing to Task 04, capability evidence to Task 05, errors/lifecycle/IDs/time to Task 06, auth to Task 07, concrete models/tests to an implementation wave, future protocol extensions to approved revisions, and OpenAI-reference placement wording alignment to separate instruction maintenance
+Acceptance criteria and evidence: CT-REQ-001 through CT-REQ-022 mapped; CDI-001 through CDI-018 preserved; CCI-001 through CCI-018 recorded; CCV-001 through CCV-045 future cases; text, multimodal, and SIWC written mappings; complete choices[0].message.content response; no provider imports, upstream I/O, credential state, silent image loss, or public streaming claim
+Validation commands / document walkthroughs / results: mandatory 27-section/scope check passed; 22 Task 01 requirements, 18 Task 02 invariants, 18 compatibility invariants, 16 decisions, 8 deferrals, and 45 future-validation IDs verified; local links passed; new-artifact whitespace check had no diagnostics; secret/provider-import scans had no matches; no later-task artifacts found
+Reviewer decision: Implementation & Testing APPROVE after required testability corrections; fresh independent Architecture & Security APPROVE with no blocking, important, or optional findings
+Findings (Blocking / Important / Optional) and disposition: primary design identified OpenAI-reference placement conflict, resolved by higher-priority project.md and recorded as CCD-D08 / testability context, case, stream, and finish-reason findings resolved and independently approved / none remaining
+Known limitations: documentation-only paper validation; no executable tests or live upstream probes; upstream versions unpinned; routing, capability evidence, error/HTTP/lifecycle policy, ID/time generation, and auth remain with Tasks 04–07
+Files changed / scope verification: Task 03 task record, Wave 01 Task 03 status row, and the single Task 03 architecture artifact only; no production code, FastAPI, providers, OAuth, tests, fixtures, dependencies, instructions, agents, or later-task artifacts
+Next task(s) and handoff constraints: Task 04 remains PLANNED and must not start before explicit Task 03 approval and later explicit execution instruction; Tasks 04/06/08 must preserve CCD/CCI semantics and return contradictions through Coordinator impact review
+Coordinator acceptance: approved by the user on 2026-10-13; Task 03 completed for commit; nothing pushed
 ```
