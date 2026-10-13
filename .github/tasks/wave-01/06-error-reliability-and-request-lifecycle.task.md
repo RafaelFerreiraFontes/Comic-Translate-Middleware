@@ -2,7 +2,7 @@
 
 ## Status
 
-PLANNED
+COMPLETED
 
 ## Objective
 
@@ -170,4 +170,24 @@ Known limitations:
 Files changed / scope verification:
 Next task(s) and handoff constraints:
 Coordinator acceptance:
+```
+
+## Execution Record
+
+```text
+Task: Wave 01 — Task 06 — Error, Reliability and Request Lifecycle
+Status: COMPLETED
+Artifact path and revision/hash: docs/architecture/error-and-request-lifecycle.md; SHA-256 17399ff4630bef044c9721a90bf3a184df7f1ed4dcec2b73ea22263ca1e8d149
+Sources and versions inspected: accepted Task 02 SHA-256 ac71a6ae853dec879f47fe6b403bb04ecf7648eb959b7b8e4c1cda56826edf4b; accepted Task 03 SHA-256 30e6d0e6788a4b5fda69225770f332a4119aea6dc3b6d35ac3373e2b981219fb; accepted Task 04 SHA-256 fbb9ff3084cdec737f8b76be7b3579291cc4be34d474c8fd07e73b492509bdff; Task 05 terminology-only coordination SHA-256 6224a1c901060ceb7a5b9ac4d276edf0e79317bf9dbd96a8f90b3eda976a286f; repository baseline e460c3f1a863f877db89b29133c594a1685da836; mandatory local instructions/references; no live provider, SDK, CLI, auth, network, or process probe
+Prerequisites accepted: Tasks 02, 03, and 04 COMPLETED; Task 05 consumed only for shared terminology and remains a sibling, not a dependency
+Decisions frozen in this task: ERD-001 through ERD-020; MiddlewareError taxonomy and internal auth variants; exact four-field public error envelope; deterministic HTTP mapping; lifecycle states and atomic response commit; terminal stream/CLI success; one absolute nonincreasing deadline; timeout/cancellation arbitration; unconditional no-response pre-commit cancellation; cleanup precedence and bounded safety reap; lifecycle as sole retry owner; finite effective attempt budget; positive no-acceptance retry evidence; no uncertain replay or fallback; safe correlation, logging, and redaction; Task 05 terminology crosswalk
+Decisions intentionally deferred (owner / reason / trigger): ERD-D01 through ERD-D07 defer numeric timing/retry values, concrete exception/handler code, provider SDK retry settings, process-group APIs, logging stack, request-ID generator, and any future public stream/tool protocol to their documented implementation or future-contract owners and evidence triggers
+Acceptance criteria and evidence: 36 sections; ERI-001 through ERI-027; ERD-001 through ERD-020; ERD-D01 through ERD-D07; ERV-001 through ERV-046; exact serialized JSON; 400/401/403/404/429/500/502/503/504 mappings; deterministic cancellation no-response rule; one retry owner; bounded retry and no uncertain replay; terminal-only InferenceResult; stream/CLI failure and cleanup scenarios; allowlist-first observability and mandatory redaction; CDI/CCI/PRI/PRD traceability
+Validation commands / document walkthroughs / results: prerequisite status/hash checks passed; section and registry continuity checks passed; error-envelope, cancellation, retry, cleanup, and review-state checks passed; local links resolved; git diff --check passed; no-index artifact check produced no whitespace diagnostics; exact three-file scope and empty staged set verified; no executable tests were run or claimed because this task is documentation-only
+Reviewer decision: Implementation & Testing APPROVE after required deterministic mapping/lifecycle/retry/cleanup corrections; fresh independent Architecture & Security APPROVE after unconditional cancellation-envelope correction; Google / Antigravity not used because accepted local references were sufficient and no concrete agy schema/flag/termination API was frozen
+Findings (Blocking / Important / Optional) and disposition: none remaining / Implementation & Testing findings on connection-loss mapping, transition parity, finite retry accounting, cleanup, configuration split, and validation inventory were resolved; independent Architecture & Security cancellation-delivery ambiguity and residual ERV-013/014 qualifiers were resolved and re-reviewed / none remaining
+Known limitations: documentation-only design; no executable implementation/tests; upstream SDK/CLI versions unpinned; exact agy event schema and platform termination API remain implementation-time evidence; numeric deadlines, attempts, backoff, and retry-after caps remain deferred but must be finite and deadline-bounded
+Files changed / scope verification: Wave index Task 06 status, Task 06 execution record, and the sole Task 06 architecture artifact only; no production code, tests, Task 07 artifact, exception/retry/timeout/process/auth implementation, SDK/CLI execution, instructions, agents, dependencies, secrets, raw provider diagnostics, or staged files
+Next task(s) and handoff constraints: Task 07 remains PLANNED and must not start without explicit user instruction; it owns auth mechanisms/storage while preserving this error/redaction/cancellation contract; Task 08 remains PLANNED
+Coordinator acceptance: explicitly approved by the user and completed for commit on 2026-10-13; no push performed
 ```
