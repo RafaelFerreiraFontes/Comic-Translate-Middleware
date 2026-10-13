@@ -2,7 +2,7 @@
 
 ## Status
 
-PLANNED
+COMPLETED
 
 ## Objective
 
@@ -166,4 +166,24 @@ Known limitations:
 Files changed / scope verification:
 Next task(s) and handoff constraints:
 Coordinator acceptance:
+```
+
+## Execution Record
+
+```text
+Task: Wave 01 — Task 05 — Model Catalog and Capabilities
+Status: COMPLETED
+Artifact path and revision/hash: docs/architecture/model-catalog-and-capabilities.md; SHA-256 6224a1c901060ceb7a5b9ac4d276edf0e79317bf9dbd96a8f90b3eda976a286f
+Sources and versions inspected: accepted Task 01 artifact SHA-256 7f38d5fd91962d50209bc56e68e29c1c6ea44427003c84cada78e3bfd08b7523; accepted Task 02 artifact SHA-256 ac71a6ae853dec879f47fe6b403bb04ecf7648eb959b7b8e4c1cda56826edf4b; accepted Task 03 artifact SHA-256 30e6d0e6788a4b5fda69225770f332a4119aea6dc3b6d35ac3373e2b981219fb; accepted Task 04 artifact SHA-256 fbb9ff3084cdec737f8b76be7b3579291cc4be34d474c8fd07e73b492509bdff; middleware baseline cf240aa76659259e551f6fd22b55c943c2963ed6; project OpenAI, Codex, and Google references at that baseline; upstream SDK/CLI versions unpinned and no live probes performed
+Prerequisites accepted: Tasks 01 through 04 COMPLETED; all accepted artifact hashes verified before Task 05 execution
+Decisions frozen in this task: MCD-001 through MCD-017; ModelCatalog ownership; adjacent catalog metadata without Task 02 schema change; namespaced identity; provider/model/runtime capability levels; tri-state capability; closed evidence admissibility/authority ranking; non-Boolean availability/discovery states; deterministic merge and conflict policy; transport/auth evidence isolation; freshness/staleness/invalidation; configured/manual inference without discovery; conservative public listing; request-time revalidation; no subscription-tier truth
+Decisions intentionally deferred (owner / reason / trigger): MCD-D01 through MCD-D06 assign TTL/persistence/scheduling and evidence storage/concurrency to implementation, exact provider discovery calls and agy flags to Google specialist/implementation evidence, lifecycle/error mechanics to Task 06, auth lifecycle to Task 07, and future public catalog status/transport selectors to approved contract revision
+Acceptance criteria and evidence: MCI-001 through MCI-028; MCV-001 through MCV-047; 18/18 CDI, 17/17 PRI, and 10/10 PRD traceability; deterministic capability/availability comparators and request-time transition matrix; conservative /v1/models projection; manual inference remains independent of discovery; separate Google SDK/CLI evidence stores; CLI images remain unknown; no capability, model availability, or plan-tier fabrication
+Validation commands / document walkthroughs / results: 36-section and contiguous-registry checks passed; required scenario/negative-term scan passed; required Google / Antigravity review APPROVE; read-only Implementation & Testing testability review APPROVE after deterministic-state corrections; fresh independent Architecture & Security review APPROVE after closed evidence-authority correction; fresh Google evidence-ranking verification APPROVE; git diff --check passed; new-artifact no-index check produced no whitespace diagnostics; exact scope, links, empty staged set, and secret/code/later-task scans passed at approval gate
+Reviewer decision: Google / Antigravity APPROVE; Implementation & Testing APPROVE; fresh independent Architecture & Security APPROVE
+Findings (Blocking / Important / Optional) and disposition: none remaining / testability ambiguities in capability/availability ties, discovery outcomes, listing, auth readiness, and request-time transitions resolved and approved; architecture authority-ranking blocker resolved with Section 12 closed admissibility/rank and independently approved / future implementation should assert CLI image rejection before subprocess, separate evidence stores, and no image promotion from successful text inference
+Known limitations: documentation-only paper validation; no executable tests or live provider/SDK/CLI/discovery/auth probes; upstream versions unpinned; headless agy image input remains unknown; exact discovery APIs/flags, TTL/storage/concurrency, Task 06 lifecycle/error policy, and Task 07 auth lifecycle remain deferred to their owners
+Files changed / scope verification: Task 05 task record, Wave 01 Task 05 status row, and the single Task 05 architecture artifact only; no production code, tests, Task 06/07 artifacts, ModelCatalog implementation, provider calls, SDK/agy execution, auth implementation, instructions, agents, dependencies, secrets, or private credential/session access; nothing staged
+Next task(s) and handoff constraints: Task 06 remains PLANNED and independent; Task 07 remains PLANNED; neither may start without explicit user instruction; Task 06 may map outcomes but must not change catalog states, evidence precedence, or fallback policy
+Coordinator acceptance: explicitly approved by the user and completed for commit on 2026-10-13; no push performed
 ```

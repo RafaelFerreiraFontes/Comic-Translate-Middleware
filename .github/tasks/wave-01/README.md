@@ -49,7 +49,7 @@ No existing repository evidence places implementation in this Wave.
 | 02 | [Canonical Domain Contracts](02-canonical-domain-contracts.task.md) | 01 | Architecture & Security | Coordinator | COMPLETED |
 | 03 | [Compatibility Layer Contract](03-compatibility-layer-contract.task.md) | 01, 02 | Architecture & Security | Implementation & Testing | COMPLETED |
 | 04 | [Provider Interface and Routing](04-provider-interface-and-routing.task.md) | 02, 03 | Architecture & Security | Coordinator | COMPLETED |
-| 05 | [Model Catalog and Capabilities](05-model-catalog-and-capabilities.task.md) | 04 | Architecture & Security | Google / Antigravity | PLANNED |
+| 05 | [Model Catalog and Capabilities](05-model-catalog-and-capabilities.task.md) | 04 | Architecture & Security | Google / Antigravity | COMPLETED |
 | 06 | [Error, Reliability and Request Lifecycle](06-error-reliability-and-request-lifecycle.task.md) | 02, 03, 04 | Architecture & Security | Implementation & Testing | PLANNED |
 | 07 | [Security and Authentication Boundaries](07-security-and-auth-boundaries.task.md) | 04, 05, 06 | Architecture & Security | Coordinator | PLANNED |
 | 08 | [Wave Integration QA and Architecture Freeze](08-wave-integration-qa-and-architecture-freeze.task.md) | 01, 02, 03, 04, 05, 06, 07 | Coordinator | Architecture & Security | PLANNED |
