@@ -2,7 +2,7 @@
 
 ## Status
 
-PLANNED
+COMPLETED
 
 ## Objective
 
@@ -168,4 +168,24 @@ Known limitations:
 Files changed / scope verification:
 Next task(s) and handoff constraints:
 Coordinator acceptance:
+```
+
+## Execution Record
+
+```text
+Task: Wave 01 — Task 04 — Provider Interface and Routing
+Status: COMPLETED
+Artifact path and revision/hash: docs/architecture/provider-contract-and-routing.md; SHA-256 fbb9ff3084cdec737f8b76be7b3579291cc4be34d474c8fd07e73b492509bdff
+Sources and versions inspected: accepted Task 01 artifact SHA-256 7f38d5fd91962d50209bc56e68e29c1c6ea44427003c84cada78e3bfd08b7523; accepted Task 02 artifact SHA-256 ac71a6ae853dec879f47fe6b403bb04ecf7648eb959b7b8e4c1cda56826edf4b; accepted Task 03 artifact SHA-256 30e6d0e6788a4b5fda69225770f332a4119aea6dc3b6d35ac3373e2b981219fb; middleware baseline 9654b2d5dd07c0fc8e065a92b8e34be28310c97e; project OpenAI, Codex, and Google references at that baseline; upstream SDK/CLI versions unpinned and no live probes performed
+Prerequisites accepted: Tasks 01, 02, and 03 COMPLETED; all three accepted artifact hashes verified before Task 04 execution
+Decisions frozen in this task: PRD-001 through PRD-010; common BaseProvider semantics; minimal ProviderRegistry; deterministic namespace binding and ProviderRouter algorithm; public namespace versus internal ProviderId; conservative capability gate; known-unavailable versus unevaluated model handling; explicit OpenAI and Google transport bindings; no fallback; dependency injection and resource ownership; future-provider extension; Codex prohibition
+Decisions intentionally deferred (owner / reason / trigger): PRD-D01 through PRD-D07 assign catalog/discovery/availability and capability evidence to Task 05, errors/timeouts/cancellation/retries to Task 06, auth lifecycle to Task 07, exact binding/factory/lifespan mechanics to implementation, and plugin/public-selector extensions to future approved work
+Acceptance criteria and evidence: PRI-001 through PRI-017; PRV-001 through PRV-026; all required routing and negative scenarios; CDI-001 through CDI-018 and CCI-001 through CCI-018 traceability; relevant CCD/CCD-D handling; provider-agnostic compatibility; explicit SDK/CLI credential isolation; no concrete provider, router, SDK, subprocess, auth, or test implementation
+Validation commands / document walkthroughs / results: 31-section/signature and contiguous-registry checks passed; 18/18 CDI and 18/18 CCI traces passed; focused Google review APPROVE; corrected independent Architecture & Security review APPROVE; read-only Implementation & Testing testability QA APPROVE; git diff --check passed; new-artifact no-index whitespace check produced no diagnostics; local task links, exact three-file scope, empty staged set, and secret/code/later-task scans passed
+Reviewer decision: Google / Antigravity APPROVE; fresh independent Architecture & Security APPROVE after the required model-availability scenario correction; Implementation & Testing read-only QA APPROVE
+Findings (Blocking / Important / Optional) and disposition: none / initial independent review required explicit unavailable-versus-unevaluated model handling, resolved by PRD-010, PRI-017, and PRV-024 through PRV-026 and independently approved; Google downstream handoffs for CLI image evidence and internal/canonical provider identity recorded / exact configuration example remains deferred to implementation by PRD-D04
+Known limitations: documentation-only paper validation; no runtime/provider/SDK/CLI probes or executable tests; upstream versions unpinned; agy headless image capability remains unknown and rejects; Tasks 05/06/07 retain their assigned catalog, lifecycle/error, and auth semantics
+Files changed / scope verification: Task 04 task record, Wave 01 Task 04 status row, and the single Task 04 architecture artifact only; no production code, tests, later-task artifacts, instructions, agents, dependencies, providers, routers, SDK clients, subprocesses, or auth implementation; nothing staged
+Next task(s) and handoff constraints: Task 05 and Task 06 remain PLANNED and must not start without explicit user instruction after Task 04 approval/commit/push workflow; both must preserve PRD/PRI semantics and resolve their assigned deferrals
+Coordinator acceptance: approved by the user on 2026-10-13; Task 04 completed for commit; nothing pushed
 ```
